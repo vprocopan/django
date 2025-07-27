@@ -1,54 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .banner {
-            background: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 2em;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        nav {
-            background: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: #FFD700;
-        }
-        @media (max-width: 600px) {
-            .banner {
-                font-size: 1.2em;
-                padding: 10px;
-            }
-            nav a {
-                display: block;
-                margin: 8px 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="banner">Welcome to the Hello World Page!</div>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-    </nav>
+{% extends "base.html" %}
+{% block title %}Hello World{% endblock %}
+{% block banner %}Welcome to the Hello World Page!{% endblock %}
+{% block content %}
     <h1>Hello World</h1>
-</body>
-</html>
+{% endblock %}
